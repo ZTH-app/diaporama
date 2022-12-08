@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <script>
+            var i = 1;
+            while (i <= 28) {
+            document.write("<section><img src='img/Diapositive" + i + ".PNG' alt='' srcset=''></section>");
+            i++;
+            }
+        </script>
+      </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // The "normal" size of the presentation, aspect ratio will
+            // be preserved when the presentation is scaled to fit different
+            // resolutions. Can be specified using percentage units.
+            width: 1920,
+            height: 1080,
+
+          });
+    </script>
+    <style>
+        .reveal .slides {
+            height: 100%;
+            top: 0;
+            margin-top: 0;
+          }
+          
+          .reveal .slides>section {
+            min-height: 90%;
+          }
+          
+          .reveal .slides>section>section {
+            min-height: 100%;
+          }
+    </style>
+  </body>
+</html>
